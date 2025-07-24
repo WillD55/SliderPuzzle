@@ -63,8 +63,7 @@ pred LegalMove [b1,b2 : Board] {
 	and
 	all r: Row, c: Col | not r -> c in (i1 -> j1 + i2 -> j2) implies
 	b2.at[r, c] = b1.at[r, c]
-//	all r: Row, c: Col | (r != i1 or c != j1) and (r != i2 or c != j2) implies 
-//			b2.at[r, c] = b1.at[r, c]
+
 }
 // allows blank and neighbor to switch positions and no other tiles to move
 
